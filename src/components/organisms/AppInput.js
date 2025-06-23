@@ -58,11 +58,11 @@ function AppInput({ label, error, maxLength, checked, type, disabled, required, 
                   defaultValue={defaultValue}
                   onChange={(e) => onChange && onChange(e)}
                 />
-                <div className="relative top-[1px] bg-white w-4 h-4 rounded-md dark:bg-gray-700 dark:border-gray-500 border peer-hover:hidden peer-checked:hidden ">
-                  <div className="w-4 h-4 " />
+                <div className="relative top-[1px] bg-white w-5 h-5 rounded-md dark:bg-gray-700 dark:border-gray-500 border peer-hover:hidden peer-checked:hidden ">
+                  <div className="w-5 h-5 " />
                 </div>
-                <div className="relative top-[1px] text-xs bg-white dark:bg-gray-700 dark:border-gray-500 w-4 h-4 rounded-md peer-checked:bg-black dark:peer-checked:bg-gray-600 hidden peer-checked:flex peer-hover:border peer-hover:flex items-center justify-center text-gray-300 peer-checked:text-white ">
-                 <div className="w-4 h-4 flex items-center justify-center"><i className="ri-check-line"></i></div> 
+                <div className="relative top-[1px] text-xs bg-white dark:bg-gray-700 dark:border-gray-500 w-5 h-5 rounded-md peer-checked:bg-bub-primary dark:peer-checked:bg-gray-600 hidden peer-checked:flex peer-hover:border peer-hover:flex items-center justify-center text-gray-300 peer-checked:text-white ">
+                 <div className="w-5 h-5 flex items-center justify-center"><i className="ri-check-line"></i></div> 
                 </div>
                 <label
                   htmlFor={name + Fid}

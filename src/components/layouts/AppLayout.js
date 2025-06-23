@@ -1,14 +1,9 @@
 import React, { useEffect, useRef } from 'react'
 import TopBar from '../molecules/TopBar'
 import Footer from '../organisms/Footer'
-import { SignOut } from '@/hooks/Auth'
-import { useRouter } from 'next/router'
-import { useDispatch } from 'react-redux'
 
 
 function AppLayout({ bg, children, active, sideMenu, noFooter, location }) {
-  const dispatch = useDispatch()
-  const router = useRouter()
   const headerRef = useRef(null);
 
 
@@ -22,7 +17,7 @@ function AppLayout({ bg, children, active, sideMenu, noFooter, location }) {
 
   return (
     <div className='flex flex-col min-h-screen'>
-      <div ref={headerRef} className='fixed w-screen'>
+      <div ref={headerRef} className='fixed z-50 w-screen'>
         <div className='bg-bub-primary p-4 text-white text-center text-xs'>Free delivery on all orders above N20,000</div>
         <div className='h-20 bg-white flex items-center'>
           <div className='w-full'><TopBar active={active} location={location} sideMenu={sideMenu} /></div>
