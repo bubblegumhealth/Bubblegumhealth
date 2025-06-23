@@ -12,8 +12,6 @@
   --color-bub-minor: #96746A;
 
 
-
-    /* FONTS  */
-   --font-andika: 'Andika New Basic', mono ;
+  /* FONTS  */
+  --font-andika: 'Andika New Basic', sans-serif;
 }
-
