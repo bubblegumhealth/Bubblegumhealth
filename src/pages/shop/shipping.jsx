@@ -123,7 +123,7 @@ function Shipping() {
                                             </div>
                                             <AppInput label='Street' placeholder='House number and street name' required />
                                             <AppInput label={<div className='text-transparent select-none text-base'>txcvext</div>} placeholder='Apartment, suite, unit, etc (optional)' required />
-                                            <AppSelect label='State' />
+                                            <AppSelect label='State' required />
                                             <AppInput label='Post Code' placeholder='Enter post code' required />
                                             <div className="sm:col-span-2">
                                                 <AppInput type='textarea' textareaHeight='h-44' label='Additional Notes' />
