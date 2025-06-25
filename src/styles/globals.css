@@ -36,6 +36,12 @@
   background-size: cover;
 }
 
+.chip{
+   background-image: url('../../public/assets/images/chip.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
 .cardImg {
   background-image: url('../../public/assets/images/cardImg.jpg');
   background-position: center;

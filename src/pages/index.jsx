@@ -53,6 +53,25 @@ export default function Home() {
         </div>
 
 
+
+        <div className="w-screen mt-4">
+          <div className="flex py-5 pr-12 gap-3.5 items-center overflow-x-auto w-[98%] ml-auto">
+            {
+              Array.from({ length: 6 }).map((_, i) => (
+                <div key={i} className="">
+                  <div className="rounded-2xl h-[240px] w-[400px] chip overflow-hidden">
+                    <div className="h-full w-full flex items-center justify-center flex-col bg-black/20">
+                      <div className="font-semibold text-2xl px-16 py-5 text-white text-center">Contraceptives & Pregnancy Prevention Kits</div>
+                      <div className="border border-white text-white font-semibold rounded-full px-6 py-4">View all Products</div>
+                    </div>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+
+
         <div className="flex max-w-5xl mx-auto gap-[72px] py-24">
           <div className="">
             <div className="sideImg2 h-[475.86px] w-[300px] rounded-2xl" />
