@@ -4,8 +4,6 @@ import React, { useState } from 'react'
 import { FiPlus, FiMinus } from "react-icons/fi";
 
 
-
-
 const plusJakartaSans = Plus_Jakarta_Sans({
     subsets: ['latin'],
     variable: '--font-plusjakarta',

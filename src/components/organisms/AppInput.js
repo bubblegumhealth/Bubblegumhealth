@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { VscEye } from "react-icons/vsc";
 import { VscEyeClosed } from "react-icons/vsc";
 
-function AppInput({ label, error, maxLength, checked, type, disabled, required, placeholder, name, max, icon, value, defaultValue, display, onChange }) {
+function AppInput({ label, error, textareaHeight, maxLength, checked, type, disabled, required, placeholder, name, max, icon, value, defaultValue, display, onChange }) {
   const [inputType, setInputType] = useState(type);
 
   const makeid = (length) => {
@@ -22,23 +22,17 @@ function AppInput({ label, error, maxLength, checked, type, disabled, required, 
 
   return (
     <div className="select-none">
-      <div className="space-y-2">
+      <div className="space-y-3">
         <div>
           {
             type !== "checkbox" && type !== "radio" && (
-              <label className="font-semibold text-gray-600 text-sm">
+              <label className="font-medium text-gray-600 text-sm">
                 {label}
               </label>
             )
           }
         </div>
         <div className="text-[16px] relative rounded-lg">
-
-          {
-            type !== "checkbox" && type !== "radio" && type !== "textarea" && (
-              <div className="absolute w-9 h-full flex items-center justify-center pl-1.5 text-gray-500">{icon}</div>
-            )
-          }
 
           {type === "checkbox" || type === "radio" ? (
             <div className="flex text-sm">
@@ -62,7 +56,7 @@ function AppInput({ label, error, maxLength, checked, type, disabled, required, 
                   <div className="w-5 h-5 " />
                 </div>
                 <div className="relative top-[1px] text-xs bg-white dark:bg-gray-700 dark:border-gray-500 w-5 h-5 rounded-md peer-checked:bg-bub-primary dark:peer-checked:bg-gray-600 hidden peer-checked:flex peer-hover:border peer-hover:flex items-center justify-center text-gray-300 peer-checked:text-white ">
-                 <div className="w-5 h-5 flex items-center justify-center"><i className="ri-check-line"></i></div> 
+                  <div className="w-5 h-5 flex items-center justify-center"><i className="ri-check-line"></i></div>
                 </div>
                 <label
                   htmlFor={name + Fid}
@@ -87,7 +81,7 @@ function AppInput({ label, error, maxLength, checked, type, disabled, required, 
               onChange={(e) => onChange && onChange(e)}
               defaultValue={defaultValue}
               maxLength={maxLength}
-              className={`w-full border ${error ? 'border-red-500' : ' border-black'} appearance-none focus:border-black disabled:border-gray-100 disabled:cursor-default p-3 pl-9 peer outline-none rounded-lg`}
+              className={`${textareaHeight} w-full resize-none border ${error ? 'border-red-500' : ' border-black'} disabled:bg-gray-100 appearance-none focus:border-black disabled:border-gray-100 disabled:cursor-default border-gray-300 p-3 peer outline-none rounded-2xl text-sm`}
             ></textarea>
           ) : (
             <>
@@ -100,7 +94,7 @@ function AppInput({ label, error, maxLength, checked, type, disabled, required, 
                 placeholder={placeholder}
                 onChange={(e) => onChange && onChange(e)}
                 defaultValue={defaultValue}
-                className={`w-full border ${error ? 'border-red-500' : ' border-black'} appearance-none focus:border-black disabled:border-gray-100 disabled:cursor-default p-3 pl-9 peer outline-none rounded-lg`}
+                className={`w-full border ${error ? 'border-red-500' : ' border-black'} disabled:bg-gray-100 appearance-none focus:border-black disabled:border-gray-100 disabled:cursor-default border-gray-300 p-3 peer outline-none rounded-2xl text-sm`}
                 maxLength={maxLength}
                 {...(maxLength ? { maxLength } : {})}
                 {...(max ? { max } : {})}
