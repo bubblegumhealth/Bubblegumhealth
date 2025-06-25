@@ -9,7 +9,7 @@ function AppLink({ text, icon, active, onClick }) {
                 <div className={` ${text.replaceAll(" ", "_").toLowerCase() === active ? "text-bub-primary" : "text-gray-500 hover:text-bub-primary  "} flex px-3 items-center gap-3 text-sm cursor-pointer`}>
                     {icon} {text}
                 </div>
-                <div className={`absolute transition-all duration-500 w-full ${text.replaceAll(" ", "_").toLowerCase() === active ? '' : 'group-hover:bottom-1.5  -bottom-5'} `}>
+                <div className={`absolute transition-all duration-500 w-full ${text.replaceAll(" ", "_").toLowerCase() === active ? '' : 'group-hover:bottom-0 -bottom-5'} `}>
                     <div className='w-1 h-1 rounded-full bg-bub-primary mx-auto'></div>
                 </div>
             </div>
@@ -19,7 +19,7 @@ function AppLink({ text, icon, active, onClick }) {
                     <div className={` ${text.replaceAll(" ", "_").toLowerCase() === active ? "text-bub-primary" : "text-gray-500 hover:text-bub-primary"} flex px-3 items-center gap-3 text-sm cursor-pointer`}>
                         {icon} {text}
                     </div>
-                    <div className={`absolute transition-all duration-500 w-full ${text.replaceAll(" ", "_").toLowerCase() === active ? '' : 'group-hover:bottom-1.5  -bottom-5'} `}>
+                    <div className={`absolute transition-all duration-500 w-full ${text.replaceAll(" ", "_").toLowerCase() === active ? '' : 'group-hover:bottom-0 -bottom-5'} `}>
                         <div className='w-1 h-1 rounded-full bg-bub-primary mx-auto'></div>
                     </div>
                 </div>
