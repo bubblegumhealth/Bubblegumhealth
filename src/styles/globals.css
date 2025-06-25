@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap');
 /* #94004A */
 
+body{
+  background-color: white;
+}
 
 @theme {
   --color-ws-white: #FFFFFF;
@@ -11,7 +14,6 @@
   --color-bub-tertiary: #8194F5;
   --color-bub-minor: #96746A;
   --color-bub-danger: #E32C2B;
-
 
   /* FONTS  */
   --font-andika: 'Andika New Basic', sans-serif;
