@@ -52,10 +52,10 @@ function AppInput({ label, error, textareaHeight, maxLength, checked, type, disa
                   defaultValue={defaultValue}
                   onChange={(e) => onChange && onChange(e)}
                 />
-                <div className="relative top-[1px] bg-white w-5 h-5 rounded-md dark:bg-gray-700 dark:border-gray-500 border peer-hover:hidden peer-checked:hidden ">
+                <div className="relative top-[1px] bg-white w-5 h-5 rounded-md border peer-hover:hidden peer-checked:hidden ">
                   <div className="w-5 h-5 " />
                 </div>
-                <div className="relative top-[1px] text-xs bg-white dark:bg-gray-700 dark:border-gray-500 w-5 h-5 rounded-md peer-checked:bg-bub-primary dark:peer-checked:bg-gray-600 hidden peer-checked:flex peer-hover:border peer-hover:flex items-center justify-center text-gray-300 peer-checked:text-white ">
+                <div className="relative top-[1px] text-xs bg-white w-5 h-5 rounded-md peer-checked:bg-bub-primary hidden peer-checked:flex peer-hover:border peer-hover:flex items-center justify-center text-gray-300 peer-checked:text-white ">
                   <div className="w-5 h-5 flex items-center justify-center"><i className="ri-check-line"></i></div>
                 </div>
                 <label
@@ -65,7 +65,7 @@ function AppInput({ label, error, textareaHeight, maxLength, checked, type, disa
                     : "pl-9 right-9 relative top-0.5"
                     }`}
                 >
-                  <span className="first-letter:capitalize dark:text-white text-tertiary-base2 leading-[20px]">
+                  <span className="first-letter:capitalize text-tertiary-base2 leading-[20px]">
                     {label}
                   </span>
                 </label>

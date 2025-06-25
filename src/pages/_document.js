@@ -32,7 +32,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body className="antialiased dark:bg-gray-950">
+      <body className="antialiased">
         <Main />
         <NextScript />
       </body>
