@@ -81,7 +81,7 @@ function AppInput({ label, error, textareaHeight, maxLength, checked, type, disa
               onChange={(e) => onChange && onChange(e)}
               defaultValue={defaultValue}
               maxLength={maxLength}
-              className={`${textareaHeight} w-full resize-none border ${error ? 'border-red-500' : ' border-black'} disabled:bg-gray-100 appearance-none focus:border-black disabled:border-gray-100 disabled:cursor-default border-gray-300 p-3 peer outline-none rounded-2xl text-sm`}
+              className={`${textareaHeight} bg-white w-full resize-none border ${error ? 'border-red-500' : ' border-black'} disabled:bg-gray-100 appearance-none focus:border-black disabled:border-gray-100 disabled:cursor-default border-gray-300 p-3 peer outline-none rounded-2xl text-sm`}
             ></textarea>
           ) : (
             <>

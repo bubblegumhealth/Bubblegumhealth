@@ -16,3 +16,29 @@
   /* FONTS  */
   --font-andika: 'Andika New Basic', sans-serif;
 }
+
+
+.aboutBannerImg{
+  background-image: url('../../public/assets/images/aboutBanner.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.aboutBubblegum{
+  background-image: url('../../public/assets/images/couples.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.cardImg{
+  background-image: url('../../public/assets/images/cardImg.jpg');
+  background-position: center;
+  background-size: 1550px;
+}
+
+
+.cardImg2{
+  background-image: url('../../public/assets/images/cardImg.jpg');
+  background-position: center;
+  background-size: cover;
+}

@@ -19,7 +19,7 @@ function AppSelect({ label, required, value, name, error, options, defaultValue,
                     onChange={(e) => onChange && onChange(e)}
                     required={required}
                     value={value}
-                    className={`w-full border ${error ? 'border-red-500' : ' border-black'} disabled:bg-gray-100 appearance-none focus:border-black disabled:border-gray-100 disabled:cursor-default border-gray-300 p-3 peer outline-none rounded-2xl text-sm`}
+                    className={`w-full border ${error ? 'border-red-500' : ' border-black'} bg-white disabled:bg-gray-100 appearance-none focus:border-black disabled:border-gray-100 disabled:cursor-default border-gray-300 p-3 peer outline-none rounded-2xl text-sm`}
                 >
                     <option value="" disabled selected hidden>
                         {placeholder}
