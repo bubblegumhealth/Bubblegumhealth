@@ -24,6 +24,12 @@
   background-size: cover;
 }
 
+.homeBannerImg {
+  background-image: url('../../public/assets/images/homeBanner.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
 .aboutBubblegum {
   background-image: url('../../public/assets/images/couples.png');
   background-position: center;
@@ -48,7 +54,7 @@
   background-position: center;
 }
 
-.sideImg2{
+.sideImg2 {
   background-image: url('../../public/assets/images/sideImg2.png');
   background-position: center;
   background-size: cover;
