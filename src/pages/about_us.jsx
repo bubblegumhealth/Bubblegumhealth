@@ -58,16 +58,16 @@ function Aboutus() {
                                 <div className="font-semibold text-2xl">Chat with Our AI Support</div>
                             </div>
                             <div className="p-4 rounded-lg bg-gray-100">
-                                <div className="font-medium text-lg">01</div>
-                                <div className="font-semibold text-2xl">Talk to a Doctor</div>
+                                <div className="font-medium text-lg">03</div>
+                                <div className="font-semibold text-2xl">Talk to consultant</div>
                             </div>
                         </div>
                     </div>
                     <div className=""></div>
                 </div>
             </div>
-            <OurDoctors />
-            <ReportRapeForm />
+            {/* <OurDoctors />
+            <ReportRapeForm /> */}
         </AppLayout>
     )
 }
