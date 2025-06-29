@@ -13,11 +13,11 @@ function OurDoctors() {
                 </div>
             </div>
             <div className="w-screen">
-                <div className="flex py-5 pr-12 gap-3.5 items-center overflow-x-auto w-[94%] ml-auto">
+                <div className="flex py-5 no-scrollbar pr-12 gap-3.5 items-center overflow-x-auto w-[94%] ml-auto">
                     {
                         Array.from({ length: 6 }).map((_, i) => (
                             <div key={i} className="">
-                                <div className="w-[440px] rounded-2xl overflow-hidden h-[607px] cardImg">
+                                <div className="w-[380px] rounded-2xl overflow-hidden h-[550px] cardImg">
                                     <div className="bg-black/50 py-12 px-8 h-full w-full">
                                         <div className="cardImg2 text-white h-full w-full overflow-hidden rounded-2xl">
                                             <div className="h-full space-y-4 w-full p-4 bg-black/20 flex items-end">

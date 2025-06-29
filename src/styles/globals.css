@@ -7,6 +7,20 @@ body{
   background-color: white;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
 @theme {
   --color-ws-white: #FFFFFF;
   --color-bub-primary: #94004A;
