@@ -62,7 +62,7 @@ function TopBar({ active }) {
                             <AppInput label='Email' required type='email' placeholder='Enter your Email' />
                             <AppInput label='Nickname' required placeholder='Enter what you would like to be called' />
                             <div className='flex justify-center'>
-                                <button className='bg-bub-primary text-white font-semibold py-3 rounded-full w-full'>Join Our Wait-list</button>
+                                <button className='bg-bub-primary cursor-pointer text-white font-semibold py-3 rounded-full w-full'>Join Our Wait-list</button>
                             </div>
                         </form>
                         <div className='flex items-center text-white justify-center gap-3'>
