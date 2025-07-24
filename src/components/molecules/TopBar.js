@@ -55,8 +55,8 @@ function TopBar({ active }) {
                     <div className='p-4 py-7 text-center space-y-4 rounded-2xl bg-white'>
                         <div className='flex font-bold text-lg gap-1 justify-center'>Hi <div className='text-bub-primary'>Welcome!</div></div>
                         <div className='space-y-3'>
-                            <div className='text-3xl font-bold max-w-sm mx-auto px-3'>Lorem, ipsum dolor sit amet consectetur.</div>
-                            <div className='text-sm text-gray-500 max-w-sm mx-auto px-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, earum fugit pariatur ipsum veritatis voluptatibus ratione similique ea esse, vero deserunt quos nisi. Fugit iusto nisi, commodi inventore officiis natus.</div>
+                            <div className='text-3xl font-bold max-w-sm mx-auto px-3'>Join the Waitlist</div>
+                            <div className='text-sm text-gray-500 max-w-sm mx-auto px-3'>Sexual health skit, Rape care kit, Pleasure Kit, Expert Advice, and Zero awkwardness, all in one safe space</div>
                         </div>
                         <form onSubmit={joinWaitList} className='text-left space-y-4'>
                             <AppInput label='Email' required type='email' placeholder='Enter your Email' />
