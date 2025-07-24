@@ -4,7 +4,7 @@ import AppLink from '../organisms/AppLink';
 import { HiOutlineUser } from "react-icons/hi2";
 import { LuShoppingCart } from "react-icons/lu";
 import { GrFacebookOption } from "react-icons/gr";
-import { RiTwitterXFill } from "react-icons/ri";
+import { RiLinkedinBoxFill, RiTiktokFill, RiTwitterXFill } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa";
 import Link from 'next/link';
 import { numberFormat } from '@/hooks/utils';
@@ -35,7 +35,7 @@ function TopBar({ active }) {
 
     const [showCart, setShowcart] = useState(false)
     const [showWaitModal, setShowWaitModal] = useState(true)
-    
+
 
     const chatAI = () => {
         setShowcart(false)
@@ -55,8 +55,8 @@ function TopBar({ active }) {
                     <div className='p-4 py-7 text-center space-y-4 rounded-2xl bg-white'>
                         <div className='flex font-bold text-lg gap-1 justify-center'>Hi <div className='text-bub-primary'>Welcome!</div></div>
                         <div className='space-y-3'>
-                            <div className='text-3xl font-bold max-w-sm mx-auto px-3'>Join the Waitlist</div>
-                            <div className='text-sm text-gray-500 max-w-sm mx-auto px-3'>Sexual health skit, Rape care kit, Pleasure Kit, Expert Advice, and Zero awkwardness, all in one safe space</div>
+                            <div className='text-xl font-bold max-w-sm mx-auto px-3'>We&apos;re Bubblegum Health — your smart, judgment-free guide to all things sexual health.</div>
+                            <div className='text-sm text-gray-500 max-w-sm mx-auto px-3'>Join the waitlist and be the first to know when we launch access to expert answers, discreet products, and AI-powered support — all with zero awkwardness.</div>
                         </div>
                         <form onSubmit={joinWaitList} className='text-left space-y-4'>
                             <AppInput label='Email' required type='email' placeholder='Enter your Email' />
@@ -66,9 +66,20 @@ function TopBar({ active }) {
                             </div>
                         </form>
                         <div className='flex items-center text-white justify-center gap-3'>
-                            <div className='w-8 h-8 rounded-full flex items-center justify-center cursor-pointer bg-bub-primary'><GrFacebookOption /></div>
-                            <div className='w-8 h-8 rounded-full flex items-center justify-center cursor-pointer bg-bub-primary'><RiTwitterXFill /></div>
-                            <div className='w-8 h-8 rounded-full flex items-center justify-center cursor-pointer bg-bub-primary'><FaInstagram /></div>
+                            {/* <div className='w-8 h-8 rounded-full flex items-center justify-center cursor-pointer bg-bub-primary'><GrFacebookOption /></div> */}
+                            <Link target='_blank' href='https://x.com/BubbleGumHealth?ref_src=twsrc%5Etfw'>
+                                <div className='w-8 h-8 rounded-full flex items-center justify-center cursor-pointer bg-bub-primary'><RiTwitterXFill /></div>
+                            </Link>
+                            <Link target='_blank' href=' https://www.instagram.com/bubblegumhealth'>
+                                <div className='w-8 h-8 rounded-full flex items-center justify-center cursor-pointer bg-bub-primary'><FaInstagram /></div>
+                            </Link>
+                            <Link target='_blank' href='https://www.linkedin.com/company/bubble-gum-health/about/?viewAsMember=true'>
+                                <div className='w-8 h-8 rounded-full flex items-center justify-center cursor-pointer bg-bub-primary'><RiLinkedinBoxFill /></div>
+                            </Link>
+                            <Link target='_blank' href='https://www.tiktok.com/@bubblegum.health'>
+                                <div className='w-8 h-8 rounded-full flex items-center justify-center cursor-pointer bg-bub-primary'><RiTiktokFill /></div>
+                            </Link>
+
                         </div>
                     </div>
                 </div>
