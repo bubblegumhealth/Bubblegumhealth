@@ -15,16 +15,16 @@ function Footer() {
     const year = new Date().getFullYear()
 
     return (
-        <div className='bg-white py-12'>
+        <div className='bg-white py-12 px-3'>
             <div className='max-w-7xl space-y-5 mx-auto'>
-                <div className='sm:flex justify-between'>
+                <div className='md:flex space-y-4 md:space-y-0 justify-between'>
                     <div>
                         <Link href='/'>
                             <div>
-                                <div className={`${andika.className} text-bub-primary font-andika font-bold text-[40px]`}>bubblegum</div>
+                                <div className={`${andika.className} text-bub-primary font-andika font-bold text-xl lg:text-[40px]`}>bubblegum</div>
                             </div>
                         </Link>
-                        <div className='max-w-sm text-gray-400'>
+                        <div className='max-w-sm text-sm lg:text-base text-gray-400'>
                             Revolutionizing preventive sexual health products for both women and men; a world where everyone has the right to make informed choices about their sexual health.
                         </div>
                     </div>
@@ -35,8 +35,8 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className='bg-gray-100 p-8 flex justify-between items-center'>
-                    <div className='text-sm text-gray-400'>
+                <div className='bg-gray-100  p-8 flex gap-2 flex-col lg:flex-row justify-between items-center'>
+                    <div className='text-sm hidden md:block text-gray-400'>
                         &copy; {year} Bubblegum. All rights reserved.
                     </div>
                     <div className='flex items-center'>
@@ -49,6 +49,9 @@ function Footer() {
                         <div className='bg-bub-primary text-white w-7 h-7 flex items-center justify-center rounded-full'><FaTwitter /></div>
                         <div className='bg-bub-primary text-white w-7 h-7 flex items-center justify-center rounded-full'><FaInstagram /></div>
                         <div className='bg-bub-primary text-white w-7 h-7 flex items-center justify-center rounded-full'><FaLinkedinIn /></div>
+                    </div>
+                    <div className='text-sm md:hidden text-gray-400'>
+                        &copy; {year} Bubblegum. All rights reserved.
                     </div>
                 </div>
             </div>

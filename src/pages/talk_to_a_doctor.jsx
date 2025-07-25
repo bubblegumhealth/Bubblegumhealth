@@ -29,10 +29,10 @@ function TalkToADoctor() {
                     <button className='bg-bub-primary text-white font-semibold py-3 rounded-full w-full'>Submit</button>
 
                 </div>
-                <div className="absolute left-0 overflow-hidden p-1 -bottom-4 transform transition-transform rotate-12 h-60 w-60 rounded-2xl bg-gray-100">
+                <div className="absolute hidden lg:block left-0 overflow-hidden p-1 -bottom-4 transform transition-transform rotate-12 h-60 w-60 rounded-2xl bg-gray-100">
                     <Image src={leftImg} alt='leftImg' width={100} height={100} className='w-full h-full rounded-2xl' />
                 </div>
-                <div className="absolute right-[10%] overflow-hidden p-1 -bottom-4 transform transition-transform -rotate-12 h-60 w-60 rounded-2xl bg-gray-100">
+                <div className="absolute hidden lg:block right-[10%] overflow-hidden p-1 -bottom-4 transform transition-transform -rotate-12 h-60 w-60 rounded-2xl bg-gray-100">
                     <Image src={rightImg} alt='leftImg' width={100} height={100} className='w-full h-full rounded-2xl' />
                 </div>
             </div>

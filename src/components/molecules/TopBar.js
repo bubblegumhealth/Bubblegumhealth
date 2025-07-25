@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { Andika, Plus_Jakarta_Sans } from "next/font/google";
 import AppLink from '../organisms/AppLink';
-import { HiOutlineUser } from "react-icons/hi2";
+import { HiOutlineBars3BottomLeft, HiOutlineUser } from "react-icons/hi2";
 import { LuShoppingCart } from "react-icons/lu";
 import { GrFacebookOption } from "react-icons/gr";
+import { IoCloseOutline } from "react-icons/io5";
 import { RiLinkedinBoxFill, RiTiktokFill, RiTwitterXFill } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa";
 import Link from 'next/link';
@@ -34,7 +35,9 @@ function ProfileEl() {
 function TopBar({ active }) {
 
     const [showCart, setShowcart] = useState(false)
-    const [showWaitModal, setShowWaitModal] = useState(true)
+    const [showSide, setShowSide] = useState(false)
+    const [showWaitModal, setShowWaitModal] = useState(false)
+
 
 
     const chatAI = () => {
@@ -86,25 +89,29 @@ function TopBar({ active }) {
             </AppModal>
             <div className='bg-white'>
                 <div className='flex max-w-[1350px] mx-auto px-3 justify-between items-center'>
-                    <div className='flex'>
+                    <div className={`lg:flex pt-12 lg:pt-0 bg-white w-72 fixed top-0 bottom-0 h-screen lg:h-auto lg:relative ${showSide ? 'left-0' : '-left-72 lg:left-0'}`}>
                         <AppLink active={active} text='Shop' />
+                        <AppLink active={active} text='Blog' />
                         <AppLink active={active} text='About Us' />
-                        <AppLink active={active} onClick={chatAI} text='Chat AI' />
+                        <AppLink active={active} comingsoon onClick={chatAI} text='Chat AI' />
                     </div>
                     <Link href='/'>
-                        <div className={`${andika.className} text-bub-primary font-andika font-bold text-[40px]`}>bubblegum</div>
+                        <div className={`${andika.className} text-bub-primary font-andika font-bold text-xl lg:text-[40px]`}>bubblegum</div>
                     </Link>
                     <div className='flex items-center justify-center'>
-                        <AppLink active={active} text='Talk to a Doctor' />
+                        <div className='hidden lg:block'>
+                            <AppLink active={active} text='Talk to a Doctor' />
+                        </div>
                         <ProfileEl />
                         <div onClick={() => setShowcart(true)} className='px-2 cursor-pointer hover:text-bub-primary relative bottom-0.5'><LuShoppingCart /></div>
+                        <div onClick={() => setShowSide(!showSide)} className='lg:hidden p-3 cursor-pointer'><HiOutlineBars3BottomLeft /></div>
                     </div>
                 </div>
                 <div className={`fixed transition-all duration-500 pt-[var(--header-subheight)] w-[450px] h-screen top-0 bottom-0 ${showCart ? 'right-0' : '-right-[450px]'} `}>
                     <div className='bg-white shadow flex flex-col h-full w-full'>
                         <div className='p-6 flex items-center justify-between'>
                             <div className={`${plusJakartaSans.className} text-xl`}>Cart <span className='text-xs bg-gray-100 rounded-full px-2 py-0.5 relative bottom-0.5'>3</span></div>
-                            <ProfileEl />
+                            <div onClick={() => setShowcart(false)}><IoCloseOutline /></div>
                         </div>
                         <div className='flex-auto space-y-3 px-6 pb-6 overflow-y-auto'>
                             {
