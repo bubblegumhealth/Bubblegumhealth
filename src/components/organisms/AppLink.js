@@ -30,8 +30,8 @@ function AppLink({ text, icon, active, onClick, comingsoon = false }) {
             }
             {
                 comingsoon && (
-                    <div className='inline-flex relative right-2'>
-                        <div className='bg-bub-danger h-4 text-[8px] flex items-center gap-1 text-white px-2 rounded-md'>
+                    <div className='relative right-1.5'>
+                        <div className='bg-bub-danger absolute -top-1 h-4 text-[8px] flex items-center gap-1 text-white px-2 rounded-md'>
                             <div>coming</div>
                             <div>soon</div>
                         </div>
