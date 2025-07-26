@@ -90,7 +90,7 @@ function TopBar({ active }) {
             <div className='bg-white'>
                 <div className='flex max-w-[1350px] mx-auto px-3 justify-between items-center'>
                     <div className={`lg:flex pt-12 lg:pt-0 bg-white w-72 fixed top-0 bottom-0 h-screen lg:h-auto lg:relative ${showSide ? 'left-0' : '-left-72 lg:left-0'}`}>
-                        <AppLink active={active} text='Shop' />
+                        <AppLink active={active} onClick={chatAI} text='Shop' />
                         <AppLink active={active} text='Blog' />
                         <AppLink active={active} text='About Us' />
                         <AppLink active={active} comingsoon onClick={chatAI} text='Chat AI' />

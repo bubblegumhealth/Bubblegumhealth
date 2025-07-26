@@ -10,7 +10,7 @@ function ReportRapeForm() {
                     <div className="font-semibold text-4xl">Report a Rape Case</div>
                     <div className="text-xl">Your safety is our priority. This form will help connect you with the right resources and support. You can stop at any time, and all information is confidential.</div>
                 </div>
-                <div className="grid grid-cols-2 gap-x-4 gap-y-8">
+                <div className="sm:grid grid-cols-2 gap-x-4 gap-y-8">
                     <AppSelect label='Are you currently in a safe location?' placeholder='Select option' />
                     <AppSelect label='How would you like to proceed?' placeholder='Select option' />
                     <AppSelect label='Where are you located? (To connect with local resources)' placeholder='Select option' />
