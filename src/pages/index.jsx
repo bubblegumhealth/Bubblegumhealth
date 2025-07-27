@@ -23,10 +23,9 @@ export default function Home() {
           <div className="homeBannerImg md:h-full rounded-2xl overflow-hidden">
             <div className="md:h-full  bg-gradient-to-b from-transparent from-55% to-black md:px-8 md:py-20 flex items-end">
               <div className="w-full space-y-3 md:space-y-8">
-                <div className="max-w-xl text-white space-y-3 p-4">
+                <div className="max-w-4xl text-white space-y-3 p-4">
                   <div className="text-xl sm:text-2xl lg:text-6xl font-bold">
-                    <div className="">Breaking <span className={`${dmSerifDisplay.className} italic`}>Stigmas</span></div>
-                    <div className="">Bursting <span className={`${dmSerifDisplay.className} italic`}>Flavors</span></div>
+                    Breaking the Stigmas of Sexual Health — With Tech, Anonymity, and Zero Shame.
                   </div>
                   <div className="md:text-xl text-xs font-medium">Welcome to a new era of intimate care — where you can talk to real medical experts, get AI-powered answers, and order your sexual wellness products discreetly, all in one safe, judgment-free space. Your health, your pleasure, your privacy — on your terms.</div>
                 </div>
@@ -113,7 +112,7 @@ export default function Home() {
       </div>
       <OurDoctors />
       <ReportRapeForm />
-      {/* <div className="space-y-10 bg-white py-24">
+      <div className="space-y-10 bg-white py-24">
         <div className="max-w-[1350px] space-y-10 mx-auto p-3">
           <div className="space-y-3">
             <div className="flex items-center justify-center">
@@ -124,13 +123,13 @@ export default function Home() {
             </div>
             <div className="font-medium text-xl text-center max-w-2xl mx-auto text-gray-500">Consider this your friendly neighborhood fact-checker, myth-buster, and confidence-booster all rolled into one.</div>
           </div>
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-6">
             {Array.from({ length: 3 }).map((_, i) => (
               <BlogChip key={i} />
             ))}
           </div>
         </div>
-      </div> */}
+      </div>
     </AppLayout>
   );
 }

@@ -3,7 +3,7 @@ import React from 'react'
 function OurDoctors() {
     return (
         <div className='bg-white py-12 space-y-14'>
-            <div className="max-w-7xl grid items-center grid-cols-2 gap-11 mx-auto">
+            <div className="max-w-7xl grid items-center md:grid-cols-2 pl-3 gap-11 mx-auto">
                 <div className="space-y-4">
                     <div className="inline-block text-sm font-medium px-3 py-1 border border-bub-primary rounded-full text-bub-primary bg-bub-primary/10">Our Doctors</div>
                     <div className="text-5xl font-semibold">Meet our Specialists</div>
