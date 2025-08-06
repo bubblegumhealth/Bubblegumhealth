@@ -24,7 +24,7 @@ export default function Home() {
             <div className="md:h-full  bg-gradient-to-b from-transparent from-55% to-black md:px-8 md:py-20 flex items-end">
               <div className="w-full space-y-3 md:space-y-8">
                 <div className="max-w-3xl text-white space-y-3 p-4">
-                  <div className="text-xl sm:text-2xl lg:text-6xl font-bold">
+                  <div className="sm:text-xl lg:text-4xl font-bold">
                     Sexual health without shame. Discreet delivery, trusted doctors, and
                     Al-powered support - all in one platform
                   </div>
