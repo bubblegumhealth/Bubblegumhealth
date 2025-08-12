@@ -5,11 +5,13 @@ import Image from 'next/image'
 import React from 'react'
 import leftImg from '@assets/images/extraImg.jpg'
 import rightImg from '@assets/images/extraImg2.jpg'
+import OurDoctors from '@/components/organisms/OurDoctors'
 
 function TalkToADoctor() {
     return (
         <AppLayout active='talk_to_a_doctor'>
-            <div className="relative overflow-hidden">
+            <OurDoctors />
+            {/* <div className="relative overflow-hidden">
                 <div className="max-w-xl overflow-hidden space-y-12 py-16 pb-32 mx-auto p-3">
                     <div className="text-center space-y-3">
                         <div className="text-4xl font-medium">Talk to a Doctor</div>
@@ -35,7 +37,7 @@ function TalkToADoctor() {
                 <div className="absolute hidden lg:block right-[10%] overflow-hidden p-1 -bottom-4 transform transition-transform -rotate-12 h-60 w-60 rounded-2xl bg-gray-100">
                     <Image src={rightImg} alt='leftImg' width={100} height={100} className='w-full h-full rounded-2xl' />
                 </div>
-            </div>
+            </div> */}
         </AppLayout>
     )
 }

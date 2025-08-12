@@ -2,8 +2,10 @@ import AppLayout from "@/components/layouts/AppLayout";
 import BlogChip from "@/components/organisms/BlogChip";
 import OurDoctors from "@/components/organisms/OurDoctors";
 import ReportRapeForm from "@/components/organisms/ReportRapeForm";
+import { fetchBlogPost } from "@/services/authService";
 import { DM_Serif_Display } from "next/font/google";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 
 
@@ -16,6 +18,20 @@ export const dmSerifDisplay = DM_Serif_Display({
 })
 
 export default function Home() {
+
+  const [blogs, setBlogs] = useState([])
+
+  const fetchBlog = async () => {
+    const { status, data } = await fetchBlogPost()
+    setBlogs(data);
+  }
+
+
+  useEffect(() => {
+    fetchBlog()
+  }, [])
+
+
   return (
     <AppLayout>
       <div className="bg-bub-secondary">
@@ -125,8 +141,8 @@ export default function Home() {
             <div className="font-medium text-xl text-center max-w-2xl mx-auto text-gray-500">Consider this your friendly neighborhood fact-checker, myth-buster, and confidence-booster all rolled into one.</div>
           </div>
           <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-6">
-            {Array.from({ length: 3 }).map((_, i) => (
-              <BlogChip key={i} />
+            {blogs.length > 0 && blogs.map((blog, i) => (
+              <BlogChip blog={blog} key={i} />
             ))}
           </div>
         </div>
