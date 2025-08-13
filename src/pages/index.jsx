@@ -141,7 +141,7 @@ export default function Home() {
             <div className="font-medium text-xl text-center max-w-2xl mx-auto text-gray-500">Consider this your friendly neighborhood fact-checker, myth-buster, and confidence-booster all rolled into one.</div>
           </div>
           <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-6">
-            {blogs.length > 0 && blogs.map((blog, i) => (
+            {blogs?.length > 0 && blogs?.map((blog, i) => (
               <BlogChip blog={blog} key={i} />
             ))}
           </div>

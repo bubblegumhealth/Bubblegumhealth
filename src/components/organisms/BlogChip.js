@@ -1,7 +1,6 @@
 import React from 'react'
 
 function BlogChip({ blog }) {
-    console.log(blog);
 
     return (
         <div className='space-y-5'>
