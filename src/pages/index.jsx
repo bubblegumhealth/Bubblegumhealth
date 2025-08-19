@@ -35,7 +35,32 @@ export default function Home() {
   return (
     <AppLayout>
       <div className="bg-bub-secondary">
-        <div className="md:h-screen p-5 md:p-12">
+
+
+        <section className="bg-bub-primary text-white text-center py-20 px-4">
+          <h1 className="text-4xl md:text-5xl space-y-1 font-[Playfair_Display,ui-serif,Georgia] font-bold mb-6">
+            <div className="">Empowering Women's</div>
+            <div className="text-white/70">Sexual Health, Discreetly</div>
+          </h1>
+          <p className="text-white/70 font-bold md:text-2xl max-w-4xl mx-auto mb-8">
+            From contraceptives to pleasure kits and doctor appointments -- we deliver everything you need for your sexual well-being, privately and conveniently.
+          </p>
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-12">
+            <button className="bg-white w-full text-bub-primary font-bold px-6 py-3 rounded-full hover:bg-gray-100 transition">
+              Book Appointment
+            </button>
+            <button className="bg-[#7a0032] w-full text-white font-bold px-6 py-3 rounded-full hover:bg-[#5a0025] transition">
+              Shop Now
+            </button>
+          </div>
+          <p className="text-white/70 text-sm md:text-lg font-semibold max-w-3xl mx-auto leading-relaxed">
+            Your health, your choice, your privacy. We're here to make women's sexual health easier, safer, and more accessible. Whether you need birth control, intimate wellness products, or expert medical advice, we deliver discreetly and support you every step of the way.
+          </p>
+        </section>
+
+
+
+        {/* <div className="md:h-screen p-5 md:p-12">
           <div className="homeBannerImg md:h-full rounded-2xl overflow-hidden">
             <div className="md:h-full  bg-gradient-to-b from-transparent from-55% to-black md:px-8 md:py-20 flex items-end">
               <div className="w-full space-y-3 md:space-y-8">
@@ -44,7 +69,7 @@ export default function Home() {
                     Sexual health without shame. Discreet delivery, trusted doctors, and
                     Al-powered support - all in one platform
                   </div>
-                  {/* <div className="md:text-xl text-xs font-medium">Welcome to a new era of intimate care — where you can talk to real medical experts, get AI-powered answers, and order your sexual wellness products discreetly, all in one safe, judgment-free space. Your health, your pleasure, your privacy — on your terms.</div> */}
+                  <div className="md:text-xl text-xs font-medium">Welcome to a new era of intimate care — where you can talk to real medical experts, get AI-powered answers, and order your sexual wellness products discreetly, all in one safe, judgment-free space. Your health, your pleasure, your privacy — on your terms.</div>
                 </div>
                 <div className="flex gap-4 p-3 md:p-0 items-center">
                   <Link href='/shop'>
@@ -57,7 +82,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="space-y-10">
           <div className={`${dmSerifDisplay.className} text-[#E0BBB1] text-3xl md:text-6xl lg:text-8xl pt-8 text-center max-w-5xl mx-auto`}>choose your adventure <span className="italic">responsibly</span></div>
