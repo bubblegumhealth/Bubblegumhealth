@@ -35,8 +35,6 @@ export default function Home() {
   return (
     <AppLayout>
       <div className="bg-bub-secondary">
-
-
         <section className="bg-bub-primary text-white text-center py-20 px-4">
           <h1 className="text-4xl md:text-5xl space-y-1 font-[Playfair_Display,ui-serif,Georgia] font-bold mb-6">
             <div className="">Empowering Women's</div>
