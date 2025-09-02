@@ -38,7 +38,7 @@ function TopBar({ active }) {
     const router = useRouter()
 
     const gotoShop = () => {
-         window.open('https://shop.bubblegum.health', '_blank')
+        window.open('https://shop.bubblegum.health', '_blank')
     }
 
     const [showCart, setShowcart] = useState(false)
@@ -117,25 +117,32 @@ function TopBar({ active }) {
                 <div className={`fixed transition-all duration-500 pt-[var(--header-subheight)] w-[450px] h-screen top-0 bottom-0 ${showCart ? 'right-0' : '-right-[450px]'} `}>
                     <div className='bg-white shadow flex flex-col h-full w-full'>
                         <div className='p-6 flex items-center justify-between'>
-                            <div className={`${plusJakartaSans.className} text-xl`}>Cart <span className='text-xs bg-gray-100 rounded-full px-2 py-0.5 relative bottom-0.5'>3</span></div>
+                            <div className={`${plusJakartaSans.className} text-xl`}>Cart <span className='text-xs bg-gray-100 rounded-full px-2 py-0.5 relative bottom-0.5'>0</span></div>
                             <div onClick={() => setShowcart(false)}><IoCloseOutline /></div>
                         </div>
                         <div className='flex-auto space-y-3 px-6 pb-6 overflow-y-auto'>
-                            {
+                            {/* {
                                 Array.from({ length: 6 }).map((_, i) => (
                                     <ProductInCart key={i} />
                                 ))
-                            }
+                            } */}
+
+                            <div className='flex h-full text-gray-400 select-none items-center justify-center flex-col'>
+                                <div><LuShoppingCart size={50} /></div>
+                                <div>Cart is Empty</div>
+                            </div>
+
                         </div>
                         <div className='p-6 space-y-3'>
                             <div className={`${plusJakartaSans.className} flex items-center justify-between`}>
                                 <div className='text-sm'>Subtotal</div>
-                                <div className='font-bold'>{numberFormat(7000)}</div>
+                                <div className='font-bold'>{numberFormat(0)}</div>
                             </div>
                             <div>
-                                <Link href='/shop/cart'>
+                                {/* <Link href='/shop/cart'>
                                     <div className='bg-bub-primary select-none rounded-full py-4 text-white text-center cursor-pointer'>Checkout</div>
-                                </Link>
+                                </Link> */}
+                                <div className='bg-gray-300 cursor-not-allowed select-none rounded-full py-4 text-white text-center'>Checkout</div>
                             </div>
                         </div>
                     </div>
