@@ -26,6 +26,10 @@ export default function Home() {
     setBlogs(data);
   }
 
+    const gotoShop = () => {
+        window.open('https://shop.bubblegum.health', '_blank')
+    }
+
 
   useEffect(() => {
     fetchBlog()
@@ -47,7 +51,7 @@ export default function Home() {
             <button className="bg-white w-full md:w-auto text-bub-primary font-bold px-6 py-3 rounded-full hover:bg-gray-100 transition">
               Book Appointment
             </button>
-            <button className="bg-[#7a0032] w-full md:w-auto text-white font-bold px-6 py-3 rounded-full hover:bg-[#5a0025] transition">
+            <button onClick={gotoShop} className="bg-[#7a0032] w-full md:w-auto text-white font-bold px-6 py-3 rounded-full hover:bg-[#5a0025] transition">
               Shop Now
             </button>
           </div>
@@ -85,9 +89,9 @@ export default function Home() {
         <div className="space-y-10">
           <div className={`${dmSerifDisplay.className} text-[#E0BBB1] text-3xl md:text-6xl lg:text-8xl pt-8 text-center max-w-5xl mx-auto`}>choose your adventure <span className="italic">responsibly</span></div>
           <div className="flex justify-center">
-            <Link href='/shop'>
-              <div className="font-semibold text-white bg-bub-primary rounded-full md:px-6 px-4 py-2 md:py-4 text-sm md:text-base">Shop Now</div>
-            </Link>
+            {/* <Link href='/shop'> */}
+              <div onClick={gotoShop} className="font-semibold text-white bg-bub-primary rounded-full md:px-6 px-4 py-2 md:py-4 text-sm md:text-base">Shop Now</div>
+            {/* </Link> */}
           </div>
         </div>
 

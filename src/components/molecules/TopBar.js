@@ -12,7 +12,6 @@ import { numberFormat } from '@/hooks/utils';
 import ProductInCart from '../organisms/ProductInCart';
 import AppModal from '../organisms/AppModal';
 import AppInput from '../organisms/AppInput';
-import { useRouter } from 'next/router';
 
 const andika = Andika({
     subsets: ["latin"],
@@ -34,9 +33,6 @@ function ProfileEl() {
 }
 
 function TopBar({ active }) {
-
-    const router = useRouter()
-
     const gotoShop = () => {
         window.open('https://shop.bubblegum.health', '_blank')
     }
