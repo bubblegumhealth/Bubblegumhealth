@@ -37,9 +37,10 @@ function Aboutus() {
                     <div className="space-y-8">
                         <div className="font-bold text-4xl">About Bubblegum</div>
                         <div className="text-xl">
-                            Our story started with a simple frustration: <span className='italic'>why is buying protection and other sexual products so unnecessarily awkward? </span>
+                            At Bubble Gum Health, we exist to give women the power to own their health decisions without shame or barriers. Strong women deserve strong solutions. We provide discreet access to contraceptives, pleasure kits, period care, pregnancy tests, and expert consultations all delivered with privacy, safety, and empowerment at the core.
+
                         </div>
-                        <div className="text-xl">Between the fluorescent-lit pharmacy aisles, judgmental stares, and products locked behind glass like they're precious jewels, we realized the whole experience was designed to make people feel embarrassed about taking care of themselves. That seemed pretty backwards to us.</div>
+                        {/* <div className="text-xl">Between the fluorescent-lit pharmacy aisles, judgmental stares, and products locked behind glass like they're precious jewels, we realized the whole experience was designed to make people feel embarrassed about taking care of themselves. That seemed pretty backwards to us.</div> */}
                     </div>
                     <div className="h-96 aboutBubblegum rounded-2xl" />
                 </div>

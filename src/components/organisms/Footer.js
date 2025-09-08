@@ -25,7 +25,8 @@ function Footer() {
                             </div>
                         </Link>
                         <div className='max-w-sm text-sm lg:text-base text-gray-400'>
-                            Revolutionizing preventive sexual health products for both women and men; a world where everyone has the right to make informed choices about their sexual health.
+                            Revolutionizing preventive sexual and reproductive health for women creating a world where every woman has the right to make informed, confident choices about her body and well-being.
+
                         </div>
                     </div>
                     <div>

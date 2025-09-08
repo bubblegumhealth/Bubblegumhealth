@@ -26,9 +26,9 @@ export default function Home() {
     setBlogs(data);
   }
 
-    const gotoShop = () => {
-        window.open('https://shop.bubblegum.health', '_blank')
-    }
+  const gotoShop = () => {
+    window.open('https://shop.bubblegum.health', '_blank')
+  }
 
 
   useEffect(() => {
@@ -42,7 +42,7 @@ export default function Home() {
         <section className="bg-bub-primary text-white text-center py-20 px-4">
           <h1 className="text-4xl md:text-5xl space-y-1 font-[Playfair_Display,ui-serif,Georgia] font-bold mb-6">
             <div className="">Empowering Women's</div>
-            <div className="text-white/70">Sexual Health, Discreetly</div>
+            <div className="text-white/70">Health, Discreetly</div>
           </h1>
           <p className="text-white/70 font-bold md:text-2xl max-w-4xl mx-auto mb-8">
             From contraceptives to pleasure kits and doctor appointments -- we deliver everything you need for your sexual well-being, privately and conveniently.
@@ -56,7 +56,7 @@ export default function Home() {
             </button>
           </div>
           <p className="text-white/70 text-sm md:text-lg font-semibold max-w-3xl mx-auto leading-relaxed">
-            Your health, your choice, your privacy. We're here to make women's sexual health easier, safer, and more accessible. Whether you need birth control, intimate wellness products, or expert medical advice, we deliver discreetly and support you every step of the way.
+            Your health, your choice, your privacy. We exist to give women the power to own their health decisions without shame or barriers. Strong women deserve strong solutions.
           </p>
         </section>
 
@@ -90,7 +90,7 @@ export default function Home() {
           <div className={`${dmSerifDisplay.className} text-[#E0BBB1] text-3xl md:text-6xl lg:text-8xl pt-8 text-center max-w-5xl mx-auto`}>choose your adventure <span className="italic">responsibly</span></div>
           <div className="flex justify-center">
             {/* <Link href='/shop'> */}
-              <div onClick={gotoShop} className="font-semibold text-white bg-bub-primary rounded-full md:px-6 px-4 py-2 md:py-4 text-sm md:text-base">Shop Now</div>
+            <div onClick={gotoShop} className="font-semibold text-white bg-bub-primary rounded-full md:px-6 px-4 py-2 md:py-4 text-sm md:text-base">Shop Now</div>
             {/* </Link> */}
           </div>
         </div>
@@ -133,9 +133,11 @@ export default function Home() {
                 <div className="font-bold text-2xl md:text-4xl text-white">About Bubblegum</div>
                 <div className="md:text-xl font-normal max-w-md space-y-4">
                   <div className="">
-                    Our story started with a simple frustration: <span className="italic">why is buying protection and other sexual products so unnecessarily awkward? </span>
+                    Our story began with a simple truth: women deserve better access to their own health. For too long, buying contraceptives, period care, or intimate products has been made unnecessarily awkward — from harsh pharmacy lights to judgmental stares and products hidden away as if they were shameful.
                   </div>
-                  <div className="">Between the fluorescent-lit pharmacy aisles, judgmental stares, and products locked behind glass like they're precious jewels, we realized the whole experience was designed to make people feel embarrassed about taking care of themselves. That seemed pretty backwards to us.</div>
+                  <div className="">
+                    We knew it didn’t have to be this way. Bubble Gum was created to put women first — making sexual and reproductive health private, safe, and empowering. Because taking care of yourself should feel like strength, never embarrassment.
+                  </div>
                 </div>
                 <div className="inline-block text-sm px-6 py-4 border border-white md:text-base font-semibold cursor-pointer rounded-full">Read more</div>
               </div>

@@ -6,10 +6,11 @@ function OurDoctors() {
             <div className="max-w-7xl grid items-center md:grid-cols-2 pl-3 gap-11 mx-auto">
                 <div className="space-y-4">
                     <div className="inline-block text-sm font-medium px-3 py-1 border border-bub-primary rounded-full text-bub-primary bg-bub-primary/10">Our Doctors</div>
-                    <div className="text-5xl font-semibold">Meet our Specialists</div>
+                    <div className="text-5xl font-semibold">Meet Our specialists</div>
                 </div>
-                <div className="text-lg text-gray-400">
-                    Behind every product and piece of advice is a team of healthcare professionals who actually know their stuff. Our medical advisory board includes doctors, therapists, and specialists who treat sexual health like any other healthcare – with expertise, compassion, and zero judgment. They make sure we get it right, so you can shop with confidence.
+                <div className="text-lg text-gray-400 space-y-2">
+                    <div>Behind every product and consultation is a team of trusted healthcare professionals who understand women’s health in all its complexity. Our medical advisory board made up of doctors, therapists, and specialists treats sexual and reproductive health with the expertise, compassion, and respect it deserves.</div>
+                    {/* <div>They ensure that every recommendation is safe, reliable, and evidence-based — so you can make confident choices about your body and your well-being.</div> */}
                 </div>
             </div>
             <div className="w-screen">
