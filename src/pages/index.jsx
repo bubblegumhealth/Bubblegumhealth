@@ -1,5 +1,6 @@
 import AppLayout from "@/components/layouts/AppLayout";
 import BlogChip from "@/components/organisms/BlogChip";
+import { Card } from "@/components/organisms/Card";
 import OurDoctors from "@/components/organisms/OurDoctors";
 import ReportRapeForm from "@/components/organisms/ReportRapeForm";
 import { fetchBlogPost } from "@/services/authService";
@@ -86,18 +87,18 @@ export default function Home() {
           </div>
         </div> */}
 
-        <div className="space-y-10">
+        {/* <div className="space-y-10">
           <div className={`${dmSerifDisplay.className} text-[#E0BBB1] text-3xl md:text-6xl lg:text-8xl pt-8 text-center max-w-5xl mx-auto`}>choose your adventure <span className="italic">responsibly</span></div>
           <div className="flex justify-center">
-            {/* <Link href='/shop'> */}
+            <Link href='/shop'>
             <div onClick={gotoShop} className="font-semibold text-white bg-bub-primary rounded-full md:px-6 px-4 py-2 md:py-4 text-sm md:text-base">Shop Now</div>
-            {/* </Link> */}
+            </Link>
           </div>
-        </div>
+        </div> */}
 
 
 
-        <div className="w-screen mt-4">
+        {/* <div className="w-screen mt-4">
           <div className="flex no-scrollbar py-5 pr-12 gap-3.5 items-center overflow-x-auto w-[98%] ml-auto">
             {
               Array.from({ length: 6 }).map((_, i) => (
@@ -112,7 +113,65 @@ export default function Home() {
               ))
             }
           </div>
-        </div>
+        </div> */}
+
+
+
+        <section id="how-it-works" className="py-28 bg-gradient-to-br from-slate-50 to-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12 md:mb-24">
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-3 md:mb-8 leading-tight tracking-tight">
+                Three Steps to<br />Anonymous Healthcare
+              </h2>
+              <p className="text-sm md:text-lg lg:text-2xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-light">
+                Getting the sexual health care you need shouldn't be complicated. Our simple 3-step process makes it easy and private.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 lg:gap-16">
+              <div className="group text-center">
+                <Card className="border-0 shadow-xl hover:shadow-3xl transition-all duration-500 bg-white p-10 h-full group-hover:-translate-y-3 rounded-3xl overflow-hidden relative">
+                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-bub-minor to-bub-primary"></div>
+                  <div className="inline-flex items-center justify-center md:w-24 w-12 md:h-24 h-12 bg-gradient-to-br from-bub-minor/10 to-primary/5 rounded-md md:rounded-3xl mb-4 md:mb-8 group-hover:scale-110 transition-transform duration-500 shadow-xl">
+                    <span className="text-lg md:text-3xl font-bold text-primary">01</span>
+                  </div>
+                  <h3 className="md:text-2xl font-bold text-slate-900 mb-5 tracking-tight">Choose Your Care</h3>
+                  <p className="text-slate-600 leading-relaxed text-sm md:text-lg">
+                    Select contraceptives, pleasure kits, or book a doctor&apos;s appointment.
+                  </p>
+                </Card>
+              </div>
+
+              <div className="group text-center">
+                <Card className="border-0 shadow-xl hover:shadow-3xl transition-all duration-500 bg-white p-10 h-full group-hover:-translate-y-3 rounded-3xl overflow-hidden relative">
+                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-bub-minor to-bub-primary"></div>
+                  <div className="inline-flex items-center justify-center md:w-24 w-12 md:h-24 h-12 bg-gradient-to-br from-bub-minor/10 to-primary/5 rounded-md md:rounded-3xl mb-4 md:mb-8 group-hover:scale-110 transition-transform duration-500 shadow-xl">
+                    <span className="text-lg md:text-3xl font-bold text-primary">02</span>
+                  </div>
+                  <h3 className="md:text-2xl font-bold text-slate-900 mb-5 tracking-tight">Discreet Delivery</h3>
+                  <p className="text-slate-600 leading-relaxed text-sm md:text-lg">
+                    Plain packaging, fast delivery, nationwide.
+                  </p>
+                </Card>
+              </div>
+
+              <div className="group text-center">
+                <Card className="border-0 shadow-xl hover:shadow-3xl transition-all duration-500 bg-white p-10 h-full group-hover:-translate-y-3 rounded-3xl overflow-hidden relative">
+                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-bub-minor to-bub-primary"></div>
+                  <div className="inline-flex items-center justify-center md:w-24 w-12 md:h-24 h-12 bg-gradient-to-br from-bub-minor/10 to-primary/5 rounded-md md:rounded-3xl mb-4 md:mb-8 group-hover:scale-110 transition-transform duration-500 shadow-xl">
+                    <span className="text-lg md:text-3xl font-bold text-primary">03</span>
+                  </div>
+                  <h3 className="md:text-2xl font-bold text-slate-900 mb-5 tracking-tight">Ongoing Support</h3>
+                  <p className="text-slate-600 leading-relaxed text-sm md:text-lg">
+                    Get guidance from certified doctors and sexual health experts.
+                  </p>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
 
 
         <div className="md:flex px-3 items-center max-w-5xl mx-auto gap-[72px] py-24">
