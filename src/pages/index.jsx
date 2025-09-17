@@ -87,18 +87,18 @@ export default function Home() {
           </div>
         </div> */}
 
-        {/* <div className="space-y-10">
+        <div className="space-y-10">
           <div className={`${dmSerifDisplay.className} text-[#E0BBB1] text-3xl md:text-6xl lg:text-8xl pt-8 text-center max-w-5xl mx-auto`}>choose your adventure <span className="italic">responsibly</span></div>
           <div className="flex justify-center">
-            <Link href='/shop'>
+            {/* <Link href='/shop'> */}
             <div onClick={gotoShop} className="font-semibold text-white bg-bub-primary rounded-full md:px-6 px-4 py-2 md:py-4 text-sm md:text-base">Shop Now</div>
-            </Link>
+            {/* </Link> */}
           </div>
-        </div> */}
+        </div>
 
 
 
-        {/* <div className="w-screen mt-4">
+        <div className="w-screen mt-4">
           <div className="flex no-scrollbar py-5 pr-12 gap-3.5 items-center overflow-x-auto w-[98%] ml-auto">
             {
               Array.from({ length: 6 }).map((_, i) => (
@@ -113,11 +113,11 @@ export default function Home() {
               ))
             }
           </div>
-        </div> */}
+        </div>
 
 
 
-        <section id="how-it-works" className="py-28 bg-gradient-to-br from-slate-50 to-white">
+        {/* <section id="how-it-works" className="py-28 bg-gradient-to-br from-slate-50 to-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12 md:mb-24">
               <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-3 md:mb-8 leading-tight tracking-tight">
@@ -169,7 +169,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
 
 
