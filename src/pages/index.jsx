@@ -49,9 +49,12 @@ export default function Home() {
             From contraceptives to pleasure kits and doctor appointments -- we deliver everything you need for your sexual well-being, privately and conveniently.
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-12">
-            <button className="bg-white w-full md:w-auto text-bub-primary font-bold px-6 py-3 rounded-full hover:bg-gray-100 transition">
-              Book Appointment
-            </button>
+            <Link href='https://calendly.com/odugbesanisaac/new-meeting' target="_blank">
+              <button className="bg-white w-full cursor-pointer md:w-auto text-bub-primary font-bold px-6 py-3 rounded-full hover:bg-gray-100 transition">
+                Book Appointment
+              </button>
+            </Link>
+
             <button onClick={gotoShop} className="bg-[#7a0032] w-full md:w-auto text-white font-bold px-6 py-3 rounded-full hover:bg-[#5a0025] transition">
               Shop Now
             </button>
