@@ -1,4 +1,5 @@
 import React from 'react'
+import { BookDoctorBanner } from './BookDoctorBanner'
 
 function OurDoctors() {
     return (
@@ -14,7 +15,8 @@ function OurDoctors() {
                 </div>
             </div>
             <div className="w-screen">
-                <div className="flex py-5 no-scrollbar pr-12 gap-3.5 items-center overflow-x-auto w-[94%] ml-auto">
+                <BookDoctorBanner />
+                {/* <div className="flex py-5 no-scrollbar pr-12 gap-3.5 items-center overflow-x-auto w-[94%] ml-auto">
                     {
                         Array.from({ length: 6 }).map((_, i) => (
                             <div key={i} className="">
@@ -39,7 +41,7 @@ function OurDoctors() {
                             </div>
                         ))
                     }
-                </div>
+                </div> */}
             </div>
         </div>
     )
