@@ -22,7 +22,7 @@ function AppInput({ label, error, textareaHeight, maxLength, checked, type, disa
 
   return (
     <div className="select-none">
-      <div className="space-y-3">
+      <div className="space-y-2">
         <div>
           {
             type !== "checkbox" && type !== "radio" && (
