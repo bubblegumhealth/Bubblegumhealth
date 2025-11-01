@@ -45,7 +45,8 @@ function AppointmentForm({ showWaitModal, setshowWaitModal }) {
 
     return (
         <AppModal mode={showWaitModal}>
-            <div className='max-w-lg space-y-3 h-screen scrollbar-hide overflow-y-auto py-6 mx-auto'>
+            <div onClick={() => setshowWaitModal(false)} className='absolute top-0 right-0 w-screen h-screen '></div>
+            <div className='max-w-lg relative z-50 space-y-3 h-screen scrollbar-hide overflow-y-auto py-6 mx-auto'>
                 <div><div className={`${andika.className} text-bub-primary text-center font-andika font-bold text-[40px]`}>bubblegum</div></div>
                 <div className='p-4 py-7 text-center space-y-4 rounded-2xl bg-white'>
                     <div className='flex font-bold text-lg gap-1 justify-center'>Consultation <div className='text-bub-primary'>Form</div></div>
