@@ -32,6 +32,23 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
+      <title>Bubblegum Health | Female Doctors for Reproductive Health & Wellness</title>
+      <meta name="title" content="Bubblegum Health | Female Doctors for Reproductive Health & Wellness" />
+      <meta name="description" content="Bubblegum Health connects women with experienced female doctors for reproductive health, fertility advice, menstrual care, and overall wellness. Safe, confidential, and supportive online consultations." />
+
+      {/* <!-- Open Graph / Facebook --> */}
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://www.bubblegum.health" />
+      <meta property="og:title" content="Bubblegum Health | Female Doctors for Reproductive Health & Wellness" />
+      <meta property="og:description" content="Bubblegum Health connects women with experienced female doctors for reproductive health, fertility advice, menstrual care, and overall wellness. Safe, confidential, and supportive online consultations." />
+      <meta property="og:image" content="https://vestv.nyc3.cdn.digitaloceanspaces.com/Bubblegum.png" />
+
+      {/* <!-- Twitter --> */}
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="https://www.bubblegum.health" />
+      <meta property="twitter:title" content="Bubblegum Health | Female Doctors for Reproductive Health & Wellness" />
+      <meta property="twitter:description" content="Bubblegum Health connects women with experienced female doctors for reproductive health, fertility advice, menstrual care, and overall wellness. Safe, confidential, and supportive online consultations." />
+      <meta property="twitter:image" content="https://vestv.nyc3.cdn.digitaloceanspaces.com/Bubblegum.png" />
       <body className="antialiased">
         <div className="app w-screen h-screen">
           <Main />
