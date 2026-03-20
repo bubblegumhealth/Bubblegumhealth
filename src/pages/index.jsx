@@ -93,33 +93,6 @@ export default function Home() {
           </div>
         </div> */}
 
-        <div className="space-y-10">
-          <div className={`${dmSerifDisplay.className} text-[#E0BBB1] text-3xl md:text-6xl lg:text-8xl pt-8 text-center max-w-5xl mx-auto`}>choose your adventure <span className="italic">responsibly</span></div>
-          <div className="flex justify-center">
-            {/* <Link href='/shop'> */}
-            <div onClick={gotoShop} className="font-semibold text-white bg-bub-primary rounded-full md:px-6 px-4 py-2 md:py-4 text-sm md:text-base">Shop Now</div>
-            {/* </Link> */}
-          </div>
-        </div>
-
-
-
-        <div className="w-screen mt-4">
-          <div className="flex no-scrollbar py-5 pr-12 gap-3.5 items-center overflow-x-auto w-[98%] ml-auto">
-            {
-              Array.from({ length: 6 }).map((_, i) => (
-                <div key={i} className="">
-                  <div className="rounded-2xl h-[140px] w-[300px] chip overflow-hidden">
-                    <div className="h-full w-full flex items-center justify-center flex-col bg-black/20">
-                      <div className="font-semibold px-16 text-sm py-3 text-white text-center">Contraceptives & Pregnancy Prevention Kits</div>
-                      <div className="border border-white text-[10px] text-white font-semibold rounded-full px-4 py-2">View all Products</div>
-                    </div>
-                  </div>
-                </div>
-              ))
-            }
-          </div>
-        </div>
 
 
 
