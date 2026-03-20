@@ -96,6 +96,7 @@ function TopBar({ active }) {
                         <AppLink active={active} onClick={gotoShop} text='Shop' />
                         <AppLink active={active} text='Blog' />
                         <AppLink active={active} text='About Us' />
+                        <AppLink active={active} text='Contact Us' />
                         <AppLink active={active} comingsoon onClick={chatAI} text='Chat AI' />
                     </div>
                     <Link href='/'>
