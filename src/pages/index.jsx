@@ -212,6 +212,7 @@ export default function Home() {
               <BlogChip blog={blog} key={i} />
             ))}
           </div>
+
         </div>
       </div>
     </AppLayout>
