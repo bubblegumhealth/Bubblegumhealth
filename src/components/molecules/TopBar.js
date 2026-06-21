@@ -104,7 +104,10 @@ function TopBar({ active }) {
                     </Link>
                     <div className='flex items-center justify-center'>
                         <div className='hidden lg:block'>
-                            <AppLink active={active} text='Talk to a Doctor' />
+                        <Link href='https://app.bubblegum.health' target='_blank'>
+                            Talk to a Doctor
+                        </Link>
+                            {/* <AppLink active={active} text='Talk to a Doctor' /> */}
                         </div>
                         <ProfileEl />
                         <div onClick={() => setShowcart(true)} className='px-2 cursor-pointer hover:text-bub-primary relative bottom-0.5'><LuShoppingCart /></div>

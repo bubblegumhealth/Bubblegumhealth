@@ -52,7 +52,8 @@ export default function Home() {
             From contraceptives to pleasure kits and doctor appointments -- we deliver everything you need for your sexual well-being, privately and conveniently.
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-12">
-            <Link href='https://app.bubblegum.health' target="_blank">
+            <Link className="bg-white w-full cursor-pointer md:w-auto text-bub-primary font-bold px-6 py-3 rounded-full hover:bg-gray-100 transition" href='https://app.bubblegum.health' target="_blank">
+             Book Appointment
             {/* <button onClick={() => setshowWaitModal(true)} className="bg-white w-full cursor-pointer md:w-auto text-bub-primary font-bold px-6 py-3 rounded-full hover:bg-gray-100 transition">
               Book Appointment
             </button> */}
