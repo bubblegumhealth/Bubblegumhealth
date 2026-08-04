@@ -55,12 +55,9 @@ export default function Home() {
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-12">
             {/* <Link href='https://calendly.com/odugbesanisaac/new-meeting' target="_blank"> */}
-            <button
-              onClick={() => setshowWaitModal(true)}
-              className="bg-white w-full cursor-pointer md:w-auto text-bub-primary font-bold px-6 py-3 rounded-full hover:bg-gray-100 transition"
-            >
+            <Link className="bg-white w-full cursor-pointer md:w-auto text-bub-primary font-bold px-6 py-3 rounded-full hover:bg-gray-100 transition" href='https://app.bubblegum.health' target="_blank">
               Speak to a Female Doctor
-            </button>
+            </Link>
             {/* </Link> */}
 
             <button
