@@ -12,6 +12,7 @@ import { numberFormat } from '@/hooks/utils';
 import ProductInCart from '../organisms/ProductInCart';
 import AppModal from '../organisms/AppModal';
 import AppInput from '../organisms/AppInput';
+import Image from 'next/image';
 
 const andika = Andika({
     subsets: ["latin"],
@@ -100,7 +101,7 @@ function TopBar({ active }) {
                         <AppLink active={active} comingsoon onClick={chatAI} text='Chat AI' />
                     </div>
                     <Link href='/'>
-                        <div className={`${andika.className} text-bub-primary font-andika font-bold text-xl lg:text-[40px]`}>bubblegum</div>
+                        <Image src='/bubblegum-logo.png' alt='Bubblegum Health logo' width={190} height={100} />
                     </Link>
                     <div className='flex items-center justify-center'>
                         <div className='hidden lg:block'>

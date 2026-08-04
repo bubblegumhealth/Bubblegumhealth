@@ -9,66 +9,73 @@ import { DM_Serif_Display } from "next/font/google";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-
-
 export const dmSerifDisplay = DM_Serif_Display({
-  subsets: ['latin'],
-  variable: '--font-dm-serif-display',
-  weight: '400',
-  style: ['normal', 'italic'],
-  display: 'swap',
-})
+  subsets: ["latin"],
+  variable: "--font-dm-serif-display",
+  weight: "400",
+  style: ["normal", "italic"],
+  display: "swap",
+});
 
 export default function Home() {
-
-  const [blogs, setBlogs] = useState([])
-  const [showWaitModal, setshowWaitModal] = useState(false)
+  const [blogs, setBlogs] = useState([]);
+  const [showWaitModal, setshowWaitModal] = useState(false);
 
   const fetchBlog = async () => {
-    const { status, data } = await fetchBlogPost()
+    const { status, data } = await fetchBlogPost();
     setBlogs(data);
-  }
+  };
 
   const gotoShop = () => {
-    window.open('https://shop.bubblegum.health', '_blank')
-  }
-
+    window.open("https://shop.bubblegum.health", "_blank");
+  };
 
   useEffect(() => {
-    fetchBlog()
-  }, [])
-
+    fetchBlog();
+  }, []);
 
   return (
     <AppLayout>
-      <AppointmentForm showWaitModal={showWaitModal} setshowWaitModal={setshowWaitModal} />
+      <AppointmentForm
+        showWaitModal={showWaitModal}
+        setshowWaitModal={setshowWaitModal}
+      />
       <div className="bg-bub-secondary">
         <section className="bg-bub-primary min-h-screen text-white text-center py-28 px-4">
           <h1 className="text-4xl md:text-5xl space-y-1 font-[Playfair_Display,ui-serif,Georgia] font-bold mb-6">
-            <div className="">Empowering Women's</div>
-            <div className="text-white/70">Health, Discreetly</div>
+            <div className="">The Future of Women&apos;s</div>
+            <div className="text-white/70">
+              Reproductive Healthcare in Africa
+            </div>
           </h1>
           <p className="text-white/70 font-bold md:text-2xl max-w-4xl mx-auto mb-8">
-            From contraceptives to pleasure kits and doctor appointments -- we deliver everything you need for your sexual well-being, privately and conveniently.
+            Reproductive Healthcare, Led by Women Who Understand Women. Speak to
+            a licensed female doctor for confidential reproductive healthcare:
+            all from the privacy of your phone.
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-12">
-            <Link className="bg-white w-full cursor-pointer md:w-auto text-bub-primary font-bold px-6 py-3 rounded-full hover:bg-gray-100 transition" href='https://app.bubblegum.health' target="_blank">
-             Book Appointment
-            {/* <button onClick={() => setshowWaitModal(true)} className="bg-white w-full cursor-pointer md:w-auto text-bub-primary font-bold px-6 py-3 rounded-full hover:bg-gray-100 transition">
-              Book Appointment
-            </button> */}
-            </Link>
+            {/* <Link href='https://calendly.com/odugbesanisaac/new-meeting' target="_blank"> */}
+            <button
+              onClick={() => setshowWaitModal(true)}
+              className="bg-white w-full cursor-pointer md:w-auto text-bub-primary font-bold px-6 py-3 rounded-full hover:bg-gray-100 transition"
+            >
+              Speak to a Female Doctor
+            </button>
+            {/* </Link> */}
 
-            <button onClick={gotoShop} className="bg-[#7a0032] w-full md:w-auto text-white font-bold px-6 py-3 rounded-full hover:bg-[#5a0025] transition">
-              Shop Now
+            <button
+              onClick={gotoShop}
+              className="bg-[#7a0032] w-full md:w-auto text-white font-bold px-6 py-3 rounded-full hover:bg-[#5a0025] transition"
+            >
+              Shop Women's Health
             </button>
           </div>
           <p className="text-white/70 text-sm md:text-lg font-semibold max-w-3xl mx-auto leading-relaxed">
-            Your health, your choice, your privacy. We exist to give women the power to own their health decisions without shame or barriers. Strong women deserve strong solutions.
+            Your health. Your choice. Your privacy. We're redefining women's
+            reproductive healthcare by making expert, confidential care
+            accessible: without fear, stigma, or barriers.
           </p>
         </section>
-
-
 
         {/* <div className="md:h-screen p-5 md:p-12">
           <div className="homeBannerImg md:h-full rounded-2xl overflow-hidden">
@@ -93,9 +100,6 @@ export default function Home() {
             </div>
           </div>
         </div> */}
-
-
-
 
         {/* <section id="how-it-works" className="py-28 bg-gradient-to-br from-slate-50 to-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -151,34 +155,65 @@ export default function Home() {
           </div>
         </section> */}
 
-
-
-
         <div className="md:flex px-3 items-center max-w-5xl mx-auto gap-[72px] py-24">
           <div className="">
             <div className="sideImg2 md:h-[475.86px] w-full h-96 md:w-[300px] rounded-2xl" />
           </div>
           <div className="space-y-6">
             <div className="flex-auto text-bub-primary font-semibold text-2xl md:text-4xl lg:text-[80px]">
-              <div className="lg:leading-[75px] lg:tracking-[-5px] md:leading-[50px] md:tracking-[-1px] ">No awkward encounters.<br /> no judgment.</div>
+              <div className="lg:leading-[75px] lg:tracking-[-5px] md:leading-[50px] md:tracking-[-1px] ">
+                Healthcare Without
+                <br />
+                judgment.
+              </div>
             </div>
-            <div className="text-gray-500 max-w-lg text-sm md:text-base">Browse anonymously, shop discreetly, receive packages that could be anything. No judgment, no traces, no awkward encounters.</div>
+            <div className="text-gray-500 max-w-lg text-sm md:text-base">
+              Your health is personal. That's why every consultation, order, and
+              delivery is handled with complete privacy, confidentiality, and
+              care.
+            </div>
           </div>
         </div>
         <div className="px-3">
           <div className="bg-bub-primary py-5 md:py-24 px-4 max-w-6xl mx-auto rounded-2xl">
             <div className="md:flex space-y-7 md:space-y-0 items-center max-w-5xl mx-auto gap-[72px] px-3 md:px-7">
               <div className="flex-auto space-y-8 text-white font-semibold">
-                <div className="font-bold text-2xl md:text-4xl text-white">About Bubblegum</div>
+                <div className="font-bold text-2xl md:text-4xl text-white">
+                  About Bubblegum health
+                </div>
                 <div className="md:text-xl font-normal max-w-md space-y-4">
                   <div className="">
-                    Our story began with a simple truth: women deserve better access to their own health. For too long, buying contraceptives, period care, or intimate products has been made unnecessarily awkward — from harsh pharmacy lights to judgmental stares and products hidden away as if they were shameful.
+                    Our story began with a simple belief:{" "}
+                    <strong>
+                      every woman deserves access to trusted reproductive
+                      healthcare without fear, stigma, or barriers.
+                    </strong>
                   </div>
                   <div className="">
-                    We knew it didn’t have to be this way. Bubble Gum was created to put women first — making sexual and reproductive health private, safe, and empowering. Because taking care of yourself should feel like strength, never embarrassment.
+                    For far too long, women have struggled to find reliable
+                    information, access qualified healthcare professionals, and
+                    receive the care they need in a safe, private, and
+                    judgment-free environment.
+                  </div>
+                  <div className="">
+                    That&apos;s why we created <strong>Bubblegum Health</strong>
+                    , Africa&apos;s trusted FemTech platform connecting women
+                    with licensed female doctors, expert reproductive
+                    healthcare, and carefully curated wellness
+                  </div>
+                  <div>
+                    products. We&apos;re making quality care more accessible,
+                    more personal, and more private, so every woman can take
+                    control of her health with confidence.
+                  </div>
+                  <div className="font-bold">
+                    Because every woman deserves healthcare that listens,
+                    understands, and empowers.
                   </div>
                 </div>
-                <div className="inline-block text-sm px-6 py-4 border border-white md:text-base font-semibold cursor-pointer rounded-full">Read more</div>
+                <div className="inline-block">
+                  <Link href='/about' className=" text-sm px-6 py-4 border border-white md:text-base font-semibold cursor-pointer rounded-full">Read more</Link>
+                </div>
               </div>
               <div className="">
                 <div className="aboutBubblegum w-full h-72 md:h-[475.86px] md:w-[300px] rounded-2xl" />
@@ -188,7 +223,9 @@ export default function Home() {
         </div>
         <div className="md:flex space-y-4 md:space-y-0 px-3 items-center max-w-5xl mx-auto gap-[72px] py-24">
           <div className="flex-auto text-bub-primary font-semibold lg:text-[80px] lg:leading-[75px] lg:tracking-[-5px] md:text-[70px] md:leading-[55px] md:tracking-[-3px] text-[50px] leading-[45px] tracking-[-1px] ">
-            safer <br /> intimacy. <br /> better protection. more fun.
+            Private care. <br /> Better health.<br /> Greater confidence.
+            
+
           </div>
           <div className="">
             <div className="sideImg h-[475.86px] md:w-[300px] rounded-2xl" />
@@ -201,19 +238,28 @@ export default function Home() {
         <div className="max-w-[1350px] space-y-10 mx-auto p-3">
           <div className="space-y-3">
             <div className="flex items-center justify-center">
-              <div className="inline-block text-sm font-medium px-3 py-1 border border-bub-primary rounded-full text-bub-primary bg-bub-primary/10">Our Blog</div>
+              <div className="inline-block text-sm font-medium px-3 py-1 border border-bub-primary rounded-full text-bub-primary bg-bub-primary/10">
+                Our Blog
+              </div>
             </div>
             <div className=" text-6xl text-center font-medium max-w-xl mx-auto">
-              The More You <span className={`${dmSerifDisplay.className} italic`}>Know</span>, The <span className={`${dmSerifDisplay.className} italic`}>Better</span> It Gets
+              The More You{" "}
+              <span className={`${dmSerifDisplay.className} italic`}>Know</span>
+              , The{" "}
+              <span className={`${dmSerifDisplay.className} italic`}>
+                Better
+              </span>{" "}
+              It Gets
             </div>
-            <div className="font-medium text-xl text-center max-w-2xl mx-auto text-gray-500">Consider this your friendly neighborhood fact-checker, myth-buster, and confidence-booster all rolled into one.</div>
+            <div className="font-medium text-xl text-center max-w-2xl mx-auto text-gray-500">
+              Consider this your friendly neighborhood fact-checker,
+              myth-buster, and confidence-booster all rolled into one.
+            </div>
           </div>
           <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-6">
-            {blogs?.length > 0 && blogs?.map((blog, i) => (
-              <BlogChip blog={blog} key={i} />
-            ))}
+            {blogs?.length > 0 &&
+              blogs?.map((blog, i) => <BlogChip blog={blog} key={i} />)}
           </div>
-
         </div>
       </div>
     </AppLayout>
