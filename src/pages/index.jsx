@@ -27,7 +27,7 @@ export default function Home() {
   };
 
   const gotoShop = () => {
-    window.open("https://shop.bubblegum.health", "_blank");
+    window.open("https://bubblegum.psx.ng", "_blank");
   };
 
   useEffect(() => {
